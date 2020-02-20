@@ -34,7 +34,10 @@ function akan(){
         alert("Enter valid birthday and choose your gender");
         document.getElementById("output").innerHTML="";
     }
-}
-if (dd<0 || dd>31) {
-    
+    else if(dd<0 || dd>31 || mm<0 || mm>12 || yy>2020) {
+        alert("Enter a valid DATE!")
+    }
+    else if(mm==2 && dd>29) {
+        alert("Enter a valid DATE!")
+    }
 }
