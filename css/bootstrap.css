@@ -4723,6 +4723,26 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
   color: #fff;
 }
+h1 {
+  text-align: center;
+}
+.card1 {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: rgb(150, 103, 103);
+  background-clip: border-box;
+  border: 1px solid rgba(139, 21, 21, 0.125);
+  border-radius: 0.75rem;
+ 
+}
+body{
+  background-image: linear-gradient(rgb(212, 135, 135), red);
+}
 
 .card {
   position: relative;
@@ -4732,7 +4752,7 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: rgb(150, 65, 65);
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -5243,7 +5263,8 @@ a.badge-dark:focus, a.badge-dark.focus {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #e9ecef;
+  background-color: #a977ad;
+ 
   border-radius: 0.3rem;
 }
 

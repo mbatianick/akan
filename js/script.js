@@ -1,4 +1,4 @@
-function akan(){
+function akan() {
 //creating variables based on the form
     var date=document.getElementById("date").value;
     var dateEnt = date.split("-");
@@ -21,10 +21,10 @@ function akan(){
     if(!isNaN(dayNumber)) {
         if(gender=="Male"){
             
-            document.getElementById("output").innerHTML=("You were born on " + daysOfWeek[dayNumber] + " and Your akana name is " + maleNames[Math.round(dayNumber)] );
+            document.getElementById("output").innerHTML=("You were born on " + daysOfWeek[dayNumber] + " and Your akana name is " + maleNames(dayNumber));
         }
         else if(gender==="Female"){
-            document.getElementById("output").innerHTML=("You were born on " + daysOfWeek[dayNumber] + " and Your akana name is " + femaleNames[Math.round(dayNumber)] );
+            document.getElementById("output").innerHTML=("You were born on " + daysOfWeek[dayNumber] + " and Your akana name is " + femaleNames(dayNumber));
         }else{
             alert("Enter valid birthday and choose your gender");
             document.getElementById("output").innerHTML="";
@@ -32,12 +32,8 @@ function akan(){
     }
     else{
         alert("Enter valid birthday and choose your gender");
-        document.getElementById("output").innerHTML="";
+        document.getElementById("output").innerHTML="ERROR!";
     }
-    else if(dd<0 || dd>31 || mm<0 || mm>12 || yy>2020) {
-        alert("Enter a valid DATE!")
-    }
-    else if(mm==2 && dd>29) {
-        alert("Enter a valid DATE!")
-    }
+   
+    
 }
